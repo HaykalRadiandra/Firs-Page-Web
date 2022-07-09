@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style css */
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("../assets/hero1.jpg");
+  background-size: cover;
+  background-position: 0 -130px;
+}
+
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 20px;
+  font-size: 36px;
+  color: #eaeaea;
+  font-weight: bold;
+  width: 600px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif
+}
+
+
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  color: #eaeaea;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+.navbar ul li a p {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: rgb(248, 63, 94) ;
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  margin-left: 50px;
+  top: 28%;
+  width: 100%;
+  text-align: center;
+  color: #eaeaea;
+  position:absolute;
+  transform: translate(-50px);
+}
+
+.content h1 {
+  font-size: 80px;
+  margin-top: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+  text-decoration: overline;
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  font-family: sans-serif;
+}
+
+.content div a {
+  text-decoration: none;
+  color: #eaeaea;
+  text-transform: uppercase;
+  
+}
+
+button {
+  width: 200px;
+  margin: 20px 10px;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #eaeaea;
+  background: transparent;
+  border: 3px solid rgb(248, 63, 94);
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+span {
+  height: 100%;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
+  border-radius: 10px;
+  background: rgb(248, 63, 94);
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
+
+div a:hover {
+  color: yellow;
+}
